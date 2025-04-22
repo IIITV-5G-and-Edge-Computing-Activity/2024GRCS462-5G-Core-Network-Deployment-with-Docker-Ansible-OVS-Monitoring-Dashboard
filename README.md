@@ -28,7 +28,69 @@ This project demonstrates the deployment of a 5G Core Network based on **Free5GC
 - cAdvisor for container insights
 - Dashboards with CPU, memory usage, and component metrics
 
-- 
+---
+
+## 🚀 Deployment Commands
+
+### 🐳 Step 1: Free5GC Core Deployment (Docker + Ansible)
+
+```bash
+# Install dependencies
+sudo apt update
+sudo apt install -y git python3 python3-pip docker.io docker-compose
+
+# Start Docker daemon
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# Clone the project repository
+git clone https://github.com/your-username/5g-network-deployment.git
+cd 5g-network-deployment/ansible-playbooks/
+
+# Run the Ansible Playbook to deploy Free5GC containers
+ansible-playbook docker-deployment.yml
+```
+
+
+## Part 2 : OVS and network slicing 
+```bash
+# Install OVS
+sudo apt install -y openvswitch-switch
+
+# Create a virtual OVS bridge
+sudo ovs-vsctl add-br br-free5gc
+
+# Create veth pairs for two slices
+sudo ip link add vethA type veth peer name vethA-peer
+sudo ip link add vethB type veth peer name vethB-peer
+
+# Attach veth interfaces to OVS bridge
+sudo ovs-vsctl add-port br-free5gc vethA
+sudo ovs-vsctl add-port br-free5gc vethB
+
+# Bring interfaces up
+sudo ip link set dev vethA up
+sudo ip link set dev vethA-peer up
+sudo ip link set dev vethB up
+sudo ip link set dev vethB-peer up
+
+# Verify OVS bridge and interfaces
+sudo ovs-vsctl show
+```
+
+## Part 3 : Prometheus + Grafana + cAdvisor Monitoring
+``` bash
+# Navigate to monitoring setup
+cd ../monitoring/
+
+# Launch services with Docker Compose
+docker-compose up -d
+
+# cAdvisor (Port 8080), Prometheus (Port 9090), Grafana (Port 3000), Node Exporter (9100)
+```
+
+
+  
 ## 📂 Final Report
 [📄 Click here to view the project report](./5g_LabReport_Final.pdf)
 
