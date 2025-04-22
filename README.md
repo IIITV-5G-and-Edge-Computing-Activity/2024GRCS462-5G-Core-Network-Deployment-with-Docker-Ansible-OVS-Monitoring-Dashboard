@@ -28,4 +28,17 @@ This project demonstrates the deployment of a 5G Core Network based on **Free5GC
 - cAdvisor for container insights
 - Dashboards with CPU, memory usage, and component metrics
 
+- 
+## 📂 Final Report
+[📄 Click here to view the project report](./5g_LabReport_Final.pdf)
+
+---
+
+## 👩‍💻 Group Members
+
+- **Garima Singh** (202251047)  
+- **Diya Garg** (202251044)  
+- **Nimisha Kushwaha** (202251079)  
+- **Pankaj** (202251083)
+
 
