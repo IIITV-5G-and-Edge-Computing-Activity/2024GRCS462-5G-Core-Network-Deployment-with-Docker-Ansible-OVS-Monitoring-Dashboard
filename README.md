@@ -28,9 +28,4 @@ This project demonstrates the deployment of a 5G Core Network based on **Free5GC
 - cAdvisor for container insights
 - Dashboards with CPU, memory usage, and component metrics
 
-## 📸 Screenshots
-![Grafana Dashboard](./screenshots/grafana-dashboard.png)
-![cAdvisor UI](./screenshots/cadvisor-ui.png)
 
-## 📂 Final Report
-[📄 Read the full report here](./report/5g_LabReport_Final.pdf)
