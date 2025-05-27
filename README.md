@@ -1,4 +1,5 @@
-# 2024Gr14CS46-5G Core Network Deployment with Docker, Ansible, OVS & Monitoring Dashboard
+# 2024Gr14CS46
+# 5G Core Network Deployment with Docker, Ansible, OVS & Monitoring Dashboard
 
 This project demonstrates the deployment of a 5G Core Network based on **Free5GC**, containerized via **Docker**, automated with **Ansible**, extended using **Open vSwitch (OVS)** for network slicing, and monitored using **Prometheus** and **Grafana**.
 
