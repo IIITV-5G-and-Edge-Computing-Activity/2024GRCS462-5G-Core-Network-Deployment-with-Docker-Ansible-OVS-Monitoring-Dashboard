@@ -93,8 +93,10 @@ docker-compose up -d
   
 ## 📂 Final Report
 [📄 Click here to view the project report](./5g_LabReport_Final.pdf)
+
+
 ## Project Video 
-[https://drive.google.com/file/d/1_z7AzoVSjoVk2HmMnQXRM2eYAbpFhi87/view?usp=sharing]
+https://drive.google.com/file/d/1_z7AzoVSjoVk2HmMnQXRM2eYAbpFhi87/view?usp=sharing
 ---
 
 ## 👩‍💻 Group Members
